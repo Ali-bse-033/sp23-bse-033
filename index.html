@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY first page</title>
+    <link rel="stylesheet" href="trip.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Tripadvisor</title>
 </head>
 <body>
-    
+    <header>
+        <div class="logo">
+            <i class="fas fa-glasses"></i><h1>Tripadvisor</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="#trips">Trips</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#more">More</a></li>
+                <li><button id="region">USD</button></li>
+                <li><button id="sign-in">Sign in</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Where to?</h1>
+        <div class="section">
+            <ul>
+                <li id="search"><a href="#search">Search All</a></li>
+                <li id="hotel"><a href="#hotels">Hotels</a></li>
+                <li id="restaurant"><a href="#restaurants">Restaurants</a></li>
+                <li id="flight"><a href="#flights">Flights</a></li>
+                <li id="thing"><a href="#things-to-do">Things to Do</a></li>
+                <li id="vacation"><a href="#vacation-rentals">Vacation Rentals</a></li>
+            </ul>
+        </div>
+        <form action="/search" method="get">
+            <input type="search" name="query" placeholder="Places to go, Things to do, Hotels..." aria-label="Search">
+            <button type="submit">Search</button>
+        </form>
+    </main>
 </body>
 </html>
