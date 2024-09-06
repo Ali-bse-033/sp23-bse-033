@@ -19,25 +19,30 @@
                 <li><a href="#trips">Trips</a></li>
                 <li><a href="#review">Review</a></li>
                 <li><a href="#more">More</a></li>
-                <li><button id="region">USD</button></li>
+                <li><button id="region"><i class="fas fa-globe"></i> | USD</button></li>
                 <li><button id="sign-in">Sign in</button></li>
+
+
             </ul>
         </nav>
     </header>
     <main>
+        <br>
         <h1>Where to?</h1>
+        <br>
         <div class="section">
             <ul>
-                <li id="search"><a href="#search">Search All</a></li>
-                <li id="hotel"><a href="#hotels">Hotels</a></li>
-                <li id="restaurant"><a href="#restaurants">Restaurants</a></li>
-                <li id="flight"><a href="#flights">Flights</a></li>
-                <li id="thing"><a href="#things-to-do">Things to Do</a></li>
-                <li id="vacation"><a href="#vacation-rentals">Vacation Rentals</a></li>
+                <li id="search"><i class="fas fa-home"></i><a href="#search">Search All</a></li>
+                <li id="hotel"><i class="fas fa-bed"></i><a href="#hotels">Hotels</a></li>
+                <li id="thing"><i class="fas fa-clipboard-list"></i><a href="#Things to do">Things to do</a></li>
+                <li id="flight"><i class="fas fa-plane"></i><a href="#flights">Flights</a></li>
+                <li id="Restaurant"><i class="fas fa-utensils"></i><a href="#restaurant">Restaurants</a></li>
+                <li id="vacation"><i class="fas fa-home"></i><a href="#vacation-rentals">Vacation Rentals</a></li>
             </ul>
         </div>
         <form action="/search" method="get">
-            <input type="search" name="query" placeholder="Places to go, Things to do, Hotels..." aria-label="Search">
+            <i class="fas fa-search search-icon"></i>
+            <input type="search" name="query"  placeholder="Places to go, Things to do, Hotels..." aria-label="Search">
             <button type="submit">Search</button>
         </form>
     </main>
