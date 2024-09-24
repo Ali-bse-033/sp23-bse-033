@@ -466,3 +466,96 @@ form i{
     cursor: pointer;
     background-color: green;
 }
+.links {
+    margin: 5%;
+    max-width: 100%;
+}
+.links #trend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.link-columns {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    margin-top: 10px; 
+}
+.links a {
+    text-decoration: none;
+    color: rgb(48, 45, 45);
+    display: inline-block;
+    font-weight: normal;
+    font-size: 15px;
+}
+.small-link, .more-small{
+    display: flex;
+    flex-direction: column;
+    width: 30%; 
+    gap: 5px; 
+}
+.mre-small{ 
+    display: flex;
+    width:30%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+#destinations {
+    text-decoration: underline;
+    margin-bottom: 2%;
+}
+footer {
+    background-color: #f4f4f4; /* Light background for the footer */
+    padding: 20px;
+    display: flex; /* Use flexbox to align sections horizontally */
+    justify-content: space-between; /* Create space between the two sections */
+    align-items: flex-start; /* Align items to the top */
+}
+
+footer p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+/* General link styling for the footer */
+footer a {
+    display: inline-block; /* Allow margin and padding */
+    text-decoration: none;
+    color: rgb(48, 45, 45);
+    font-size: 15px;
+    margin-bottom: 5px; /* Space between links */
+}
+
+/* Hover effect for the links */
+footer a:hover {
+    text-decoration: underline;
+    color: blue; /* Optional: change color on hover */
+}
+
+/* Container for the entire "About" and "Explore" section */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Each section will take up about half the space */
+}
+
+/* Styling for the links in the "About Tripadvisor" section */
+.about-links {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+    margin-bottom: 20px; /* Add space between sections */
+}
+
+/* Styling for the links in the "Explore" section */
+#explore-links {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+}
+
+
