@@ -510,52 +510,42 @@ form i{
     margin-bottom: 2%;
 }
 footer {
-    background-color: #f4f4f4; /* Light background for the footer */
+    background-color: #f4f4f4; 
     padding: 20px;
-    display: flex; /* Use flexbox to align sections horizontally */
-    justify-content: space-between; /* Create space between the two sections */
-    align-items: flex-start; /* Align items to the top */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
 }
 
 footer p {
     font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 10px; /* Adds space below the heading */
+    margin-bottom: 10px;
 }
-
-/* General link styling for the footer */
 footer a {
-    display: inline-block; /* Allow margin and padding */
+    display: inline-block; 
     text-decoration: none;
     color: rgb(48, 45, 45);
     font-size: 15px;
-    margin-bottom: 5px; /* Space between links */
+    margin-bottom: 5px; 
 }
-
-/* Hover effect for the links */
 footer a:hover {
     text-decoration: underline;
-    color: blue; /* Optional: change color on hover */
+    color: blue; 
 }
-
-/* Container for the entire "About" and "Explore" section */
 .footer-section {
     display: flex;
     flex-direction: column;
-    width: 48%; /* Each section will take up about half the space */
+    width: 48%; 
 }
-
-/* Styling for the links in the "About Tripadvisor" section */
 .about-links {
     display: flex;
-    flex-direction: column; /* Stack the links vertically */
-    margin-bottom: 20px; /* Add space between sections */
+    flex-direction: column; 
+    margin-bottom: 20px; 
 }
-
-/* Styling for the links in the "Explore" section */
 #explore-links {
     display: flex;
-    flex-direction: column; /* Stack the links vertically */
+    flex-direction: column
 }
 
 
