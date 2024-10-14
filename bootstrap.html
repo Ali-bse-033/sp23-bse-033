@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripadvisor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky-top bg-info py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-success">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <i class="fas fa-glasses bg-danger rounded-circle p-2 me-2"></i>
+                    <h1 class="h5 mb-0">Tripadvisor</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link btn-outline-secondary" href="#discover">Discover</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#trips">Trips</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#review">Review</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#more">More</a></li>
+                        <li class="nav-item"><button class="btn btn-outline-secondary" id="region"><i class="fas fa-globe"></i> | USD</button></li>
+                        <li class="nav-item"><button class="btn btn-outline-primary ms-2" id="sign-in">Sign in</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h1 class="text-center mb-5">Where to?</h1>
+        
+        <ul class="nav justify-content-center mb-4 flex-wrap">
+            <li class="nav-item"><a class="nav-link" href="#search"><i class="fas fa-home"></i> Search All</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hotels"><i class="fas fa-bed"></i> Hotels</a></li>
+            <li class="nav-item"><a class="nav-link" href="#things-to-do"><i class="fas fa-clipboard-list"></i> Things to do</a></li>
+            <li class="nav-item"><a class="nav-link" href="#flights"><i class="fas fa-plane"></i> Flights</a></li>
+            <li class="nav-item"><a class="nav-link" href="#restaurants"><i class="fas fa-utensils"></i> Restaurants</a></li>
+            <li class="nav-item"><a class="nav-link" href="#vacation-rentals"><i class="fas fa-home"></i> Vacation Rentals</a></li>
+        </ul>
+
+        <form action="/search" method="get" class="mb-5">
+            <div class="input-group">
+                <span class="input-group-text bg-transparent"><i class="fas fa-search"></i></span>
+                <input type="search" name="query" class="form-control" placeholder="Places to go, Things to do, Hotels...">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
+
+        <div class="row align-items-center bg-info bg-opacity-25 p-4 rounded mb-5">
+            <div class="col-md-6 order-md-2 mb-3 mb-md-0">
+                <img src="trip-im.png" alt="AI Trip Planning" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <p class="text-primary mb-0">Powered by AI</p>
+                <span class="badge bg-info">BETA</span>
+                <h2 class="mt-3">Get custom recs for your next trip</h2>
+                <p>Find great eats, experiences, and more—inspired by things you love.</p>
+                <button class="btn btn-primary"><i class="fas fa-map-marker-alt me-2"></i>Start a trip with AI</button>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h2>Go on an award winning destination</h2>
+            <p>2024's Travelers' Choice Awards Best of the Best Things To Do</p>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-4 mb-4">
+                <div class="position-relative">
+                    <img src="balon.jpg" alt="Top Experiences" class="img-fluid rounded">
+                    <p class="position-absolute bottom-0 start-0 text-white p-2 m-0 h4">Top Experiences</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="position-relative">
+                    <img src="attraction.jpg" alt="Top Attractions" class="img-fluid rounded">
+                    <p class="position-absolute bottom-0 start-0 text-white p-2 m-0 h4">Top Attractions</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="position-relative">
+                    <img src="bucket.jpg" alt="Bucket List" class="img-fluid rounded">
+                    <p class="position-absolute bottom-0 start-0 text-white p-2 m-0 h4">Bucket List</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h2>Ways to Tour Lahore</h2>
+            <p>Book these experiences for a close-up look at Lahore.</p>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-4 mb-4">
+                <a href="#masjid" class="text-decoration-none">
+                    <div class="position-relative">
+                        <img src="masjid.jpg" alt="Lahore Full day sightseeing Guided tour" class="img-fluid rounded">
+                        <i class="fas fa-heart position-absolute top-0 end-0 m-2 p-2 bg-white rounded-circle"></i>
+                    </div>
+                    <p class="mt-2 text-dark">Lahore Full day sightseeing Guided tour</p>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="#qila" class="text-decoration-none">
+                    <div class="position-relative">
+                        <img src="qila.jpg" alt="Lahore Full day sightseeing tour" class="img-fluid rounded">
+                        <i class="fas fa-heart position-absolute top-0 end-0 m-2 p-2 bg-white rounded-circle"></i>
+                    </div>
+                    <p class="mt-2 text-dark">Lahore Full day sightseeing tour</p>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="#eng" class="text-decoration-none">
+                    <div class="position-relative">
+                        <img src="eng.jpg" alt="Lahore City , Fort , Museums and Walled city Exploration Tour" class="img-fluid rounded">
+                        <i class="fas fa-heart position-absolute top-0 end-0 m-2 p-2 bg-white rounded-circle"></i>
+                    </div>
+                    <p class="mt-2 text-dark">Lahore City , Fort , Museums and Walled city Exploration Tour</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-info bg-opacity-25 p-4 rounded mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/ae/7d/81/caption.jpg?w=200&h=200&s=1" alt="Alice Springs" class="img-fluid rounded">
+                </div>
+                <div class="col-md-8">
+                    <h2>Discover Alice springs</h2>
+                    <p>Find out why Travelers like you are moving about Alice springs</p>
+                    <button class="btn btn-primary">Explore now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-4 mb-4">
+                <a href="#exp" class="text-decoration-none">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/58/33/72/37ab8bc6-30fa-4ef1.jpg?w=800&h=500&s=1" alt="Fall weekend getaways" class="img-fluid rounded">
+                    <p class="mt-2 text-dark">12 incredible fall weekend gateways across the US</p>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="#explore1" class="text-decoration-none">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/58/33/98/49758b0c-f196-4714.jpg?w=800&h=500&s=1" alt="Las Vegas pools" class="img-fluid rounded">
+                    <p class="mt-2 text-dark">Dive into the best pools in Las Vegas</p>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="#explore2" class="text-decoration-none">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/58/33/e5/dbcfdc35-cd8e-4943.jpg?w=800&h=-1&s=1" alt="Puerto Rico with Kids" class="img-fluid rounded">
+                    <p class="mt-2 text-dark">Puerto Rico with Kids</p>
+                </a>
+            </div>
+        </div>
+
+        <h2 class="mb-4">Top destination for your next vacation</h2>
+        <div class="row mb-5">
+            <div class="col-md-4 mb-4">
+                <a href="#yellow" class="text-decoration-none">
+                    <div class="position-relative">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/cf/f9/eb/caption.jpg?w=300&h=300&s=1&cx=941&cy=299&chk=v1_18cfa51ea9b832b15689" alt="Yellowstone National Park" class="img-fluid rounded">
+                        <p class="position-absolute bottom-0 start-0 text-white p-2 m-0">Yellowstone National Park, WY</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="#punta" class="text-decoration-none">
+                    <div class="position-relative">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/7b/93/caption.jpg?w=300&h=300&s=1" alt="Punta Cana" class="img-fluid rounded">
+                        <p class="position-absolute bottom-0 start-0 text-white p-2 m-0">Punta Cana, Dominican Republic</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 mb-4">
+                <a href="#fl" class="text-decoration-none">
+                    <div class="position-relative">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/c7/b4/0e/caption.jpg?w=300&h=300&s=1&cx=3478&cy=2156&chk=v1_5a57c6b331ccbdf916fd" alt="Orlando" class="img-fluid rounded">
+                        <p class="position-absolute bottom-0 start-0 text-white p-2 m-0">Orlando, FL</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-info bg-opacity-25 p-4 rounded mb-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/17/5b/9c/caption.jpg?w=600&h=-1&s=1" alt="Travel with your dog" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>It's easier than ever to go together</h2>
+                    <p>Travel is better when you can share it with your best friend. Find all the tips, guides, and tools you need to take a dream trip with your dog.</p>
+                    <button class="btn btn-primary">Explore more</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5">
+            <h2>Trending in Travel</h2>
+            <a href="#destinations" class="text-decoration-none">Fall destinations</a>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <a href="#montreal" class="d-block text-decoration-none">Montreal</a>
+                    <a href="#bar" class="d-block text-decoration-none">Bar Harbor</a>
+                    <a href="#niagara" class="d-block text-decoration-none">Niagara-on-the-Lake</a>
+                    <a href="#prince" class="d-block text-decoration-none">Prince Edward Island</a>
+                    <a href="#provincial" class="d-block text-decoration-none">Provincial Park</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#mexico" class="d-block text-decoration-none">Mexico City</a>
+                    <a href="#rica" class="d-block text-decoration-none">Costa Rica</a>
+                    <a href="#cancun" class="d-block text-decoration-none">Canc�n</a>
+                    <a href="#boracay" class="d-block text-decoration-none">Boracay</a>
+                    <a href="#cabo" class="d-block text-decoration-none">Cabo San Lucas</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#lisbon" class="d-block text-decoration-none">Lisbon</a>
+                    <a href="#athens" class="d-block text-decoration-none">Athens</a>
+                    <a href="#munich" class="d-block text-decoration-none">Munich</a>
+                    <a href="#dubrovnik" class="d-block text-decoration-none">Dubrovnik</a>
+                    <a href="#marrakech" class="d-block text-decoration-none">Marrakech</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
