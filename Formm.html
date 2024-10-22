@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+        input {
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="webform">
+        <label for="fname">First Name:</label>
+        <br>
+        <input id="fname" type="text" name="fName" placeholder="Ali">
+        <br><br>
+
+        <label for="lname">Last Name:</label>
+        <br>
+        <input id="lname" type="text" name="lName" placeholder="Murtaza">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input id="email" type="email" name="email" placeholder="Ali@gmail.com">
+        <br><br>
+
+        <label for="phoneno">Phone No:</label>
+        <br>
+        <input id="phoneno" type="tel" name="phone" placeholder="03099468369">
+        <br><br>
+
+        <button id="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("webform").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            const fnameInput = document.getElementById("fname");
+            const lnameInput = document.getElementById("lname");
+            const emailInput = document.getElementById("email");
+            const phoneInput = document.getElementById("phoneno");
+
+            const fname = fnameInput.value.trim();
+            const lname = lnameInput.value.trim();
+            const email = emailInput.value.trim();
+            const phone = phoneInput.value.trim();
+
+            fnameInput.classList.remove("error");
+            lnameInput.classList.remove("error");
+            emailInput.classList.remove("error");
+            phoneInput.classList.remove("error");
+
+            let hasError = false;
+
+        
+            if (fname === "") {
+                fnameInput.classList.add("error");
+                hasError = true;
+            }
+            if (lname === "") {
+                lnameInput.classList.add("error");
+                hasError = true;
+            }
+            if (email === "") {
+                emailInput.classList.add("error");
+                hasError = true;
+            }
+            if (phone === "") {
+                phoneInput.classList.add("error");
+                hasError = true;
+            }
+
+            if (!hasError) {
+                console.log("Form successfully submitted");
+            } else {
+                console.log("Please fill in all required fields.");
+            }
+        });
+    </script>
+</body>
+</html>
