@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Ali Murtaza</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    .summary {
+      display: none;
+      z-index: 1000;
+    }
+    #img{
+        background-color: rgb(230, 240, 240);
+    }
+  </style>
+</head>
+<body >
+  <div class="container mt-4 position-relative bg-light rounded-3">
+    <div id="img" class="row ">
+      <div class="col-md-3 text-center">
+        <img src="murtaza.jpeg" alt="Ali Murtaza" class="profile-img rounded-3 mt-2" id="profile-pic" style="width: 150px; height: 150px; object-fit: cover;">
+      </div>
+
+      <div class="col-md-6">
+        <h1>Ali Murtaza</h1>
+        <p><i class="fas fa-map-marker-alt"></i> Lahore, Punjab, Pakistan</p>
+        <p><i class="fas fa-envelope"></i> alimurtaza9468369@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 03099468369</p>
+        <p><i class="fas fa-linkedin"></i> <a href="#">linkedin.com/in/ali-murtaza-b5a691304</a></p>
+      </div>
+      <div class="col-md-3 bg-light p-3 border rounded position-fixed d-none top-0 end-0" id="summary">
+        <h2 class="bold">Summary</h2>
+        <p>Recent Web Development intern at Abacus with hands-on experience in front-end development. Proficient in HTML, CSS, and JavaScript, and contributed to multiple projects enhancing user interfaces. Eager to leverage foundational skills in a full-time Front End Developer role at your company.</p>
+      </div>
+    </div>
+
+    <div class="row m-2">
+      <h2 class="bold">Experience</h2>
+      <div class="col-md-12">
+        <ul>
+          <li><strong>Web Developer</strong> <span class="text-muted">| Abacus, Lahore</span> <br> May 2024 - August 2024</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row m-2">
+      <h2 class="bold">Projects</h2>
+      <div class="col-md-12">
+        <ul>
+          <li><strong>Website Clones</strong> <span class="text-muted">| University</span> <br> I have created a lot of website clones and have also created gaming apps.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row m-2">
+      <h2 class="bold">Education</h2>
+      <div class="col-md-12">
+        <ul>
+          <li><strong>Software Engineering</strong> <span class="text-muted">| COMSATS University Islamabad, Lahore Campus</span> <br> Lahore, Pakistan | 2027 | 3.55 GPA</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row m-2">
+      <h2 class="bold">Certifications</h2>
+      <div class="col-md-6">
+        <ul>
+          <li><strong>AWS Cloud Computing</strong>
+            <div class="col-md-6">
+              <li>| NavTech, 2024</li>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="row m-2 ">
+        <h2 class="fw-bold">Skills</h2>
+        <div class="col-md-12">
+          <ul>
+            <li>Front-end: HTML, CSS, JavaScript, Bootstrap, React.js</li>
+            <li>Programming languages: C, C++, Java</li>
+            <li>Data Structures and Algorithms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    
+
+  <!-- JavaScript for hover effect -->
+  <script>
+    const profilePic = document.getElementById('profile-pic');
+    const summary = document.getElementById('summary');
+
+    // Show summary on hover
+    profilePic.addEventListener('mouseover', function() {
+      summary.classList.remove('d-none');
+    });
+
+    // Hide summary when hover ends
+    profilePic.addEventListener('mouseout', function() {
+      summary.classList.add('d-none');
+    });
+  </script>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
